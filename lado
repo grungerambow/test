@@ -1,0 +1,5 @@
+lado khau
+In our experiment setups, we have used thin packets
+
+transmission rates i.e. 2, 5,10 and 25 pkts/s with two packets size 1024 bytes and 500 bytes. It is very few packets per second for transmission, which is similar to chat traffic. To transmit or download large files we need to manipulate large rates of packets per second for e.g. 100 or 500 packets per second. This is the limitations was observed with defining large rates for packet transmission or bulk data transmission.  In our implementation we are unable to send more than 50 packets per second. With TCP is harder to control exactly because we are limited by the feedback coming from the client. We cannot just send how much packets we want. There is some imprecision in the OS if we put the rate too high. To overcome this problem UDP socket is more appropriate or we can use traffic generator tool like netperfmeter, iperf, etc. Due to time constraints we cannot test this methods for our experiments.
+
